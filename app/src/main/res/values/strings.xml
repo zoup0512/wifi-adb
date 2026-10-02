@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">WiFi ADB</string>
+
+    <!-- 状态卡片 -->
+    <string name="status_on">网络调试已开启</string>
+    <string name="status_off">网络调试未开启</string>
+    <string name="status_checking">状态检测中…</string>
+    <string name="address_unknown">未获取到 IP 地址</string>
+    <string name="address_value">%1$s:%2$d</string>
+    <string name="address_hint">手机与电脑需连接同一局域网</string>
+    <string name="usb_adb_on">USB 调试已开启</string>
+    <string name="usb_adb_off">USB 调试未开启</string>
+    <string name="copy_cmd">复制连接命令</string>
+    <string name="toggle_enable">一键开启</string>
+    <string name="toggle_disable">一键关闭</string>
+    <string name="toggle_needs_root">开启（需 Root）</string>
+    <string name="toggle_checking">检测 Root…</string>
+    <string name="toggle_sent_on">已开启网络 ADB，请在电脑上执行连接命令</string>
+    <string name="toggle_sent_off">已关闭网络 ADB</string>
+    <string name="toggle_failed">命令执行失败，请检查是否已授权 Root</string>
+    <string name="copied">已复制：%1$s</string>
+
+    <!-- 设备信息 -->
+    <string name="card_device">设备信息</string>
+    <string name="label_model">设备型号</string>
+    <string name="label_version">系统版本</string>
+    <string name="label_root">Root 权限</string>
+    <string name="label_usb_adb">USB 调试</string>
+    <string name="label_wireless">无线调试（A11+）</string>
+    <string name="value_on">已开启</string>
+    <string name="value_off">未开启</string>
+    <string name="value_unsupported">不支持</string>
+    <string name="root_checking">检测中…</string>
+    <string name="root_yes">已获取（可一键开关）</string>
+    <string name="root_no">未获取（可用 USB 方式）</string>
+    <string name="value_version">Android %1$s (API %2$d)</string>
+
+    <!-- 使用引导 -->
+    <string name="card_guide">使用引导</string>
+    <string name="guide_steps">1. 确保手机与电脑连接同一个 WiFi 网络。\n2. 开启网络调试，三种方式任选：\n　· 已 Root：点击上方「一键开启」。\n　· 无 Root：先用数据线连接电脑，在电脑上执行 adb tcpip 5555，成功后即可拔线。\n　· Android 11+：开发者选项中开启「无线调试」，按提示与电脑配对。\n3. 在电脑上执行 adb connect 手机IP:5555（点击上方按钮可直接复制）。\n4. 调试结束后点击「一键关闭」，或在电脑执行 adb usb 恢复 USB 调试。</string>
+    <string name="open_wireless">打开无线调试</string>
+    <string name="open_dev">开发者选项</string>
+    <string name="wireless_settings_unavailable">当前系统不支持无线调试设置页</string>
+    <string name="dev_settings_unavailable">无法打开开发者选项</string>
+
+    <!-- 无 Root 提示对话框 -->
+    <string name="no_root_dialog_title">未检测到 Root</string>
+    <string name="no_root_dialog_message">可以改用以下方式开启 WiFi 调试：\n\n① USB 方式（无需 Root）：先用数据线连接电脑，确保 USB 调试已开启，然后在电脑上执行 adb tcpip 5555，之后本应用会自动显示状态。\n\n② Android 11+：在开发者选项中开启「无线调试」，与电脑配对连接。</string>
+    <string name="no_root_dialog_copy">复制 adb tcpip 5555</string>
+    <string name="no_root_dialog_open_dev">打开开发者选项</string>
+
+    <!-- 设置 -->
+    <string name="card_settings">设置</string>
+    <string name="notify_title">常驻通知显示连接命令</string>
+    <string name="notify_subtitle">在通知栏常驻显示 adb connect 命令，方便随时查看</string>
+    <string name="notify_title_on">WiFi 调试已开启</string>
+    <string name="notify_title_off">WiFi 调试未开启</string>
+    <string name="notify_waiting_ip">等待获取 IP 地址…</string>
+    <string name="notify_channel_name">连接命令</string>
+    <string name="notify_permission_denied">未授予通知权限，无法显示常驻通知</string>
+
+    <!-- 调试主机（PC）管理 -->
+    <string name="card_hosts">调试主机（PC）</string>
+    <string name="host_none">未选择主机</string>
+    <string name="host_empty_hint">保存常用电脑的 IP，点选标签即可切换，并自动检测连通性</string>
+    <string name="host_hint_cmd">在「%1$s」上执行：adb connect %2$s</string>
+    <string name="host_hint_no_ip">已选择「%1$s」，获取到 IP 后将显示连接命令</string>
+    <string name="host_reachable">可连通</string>
+    <string name="host_unreachable">不可达</string>
+    <string name="host_checking">检测中…</string>
+    <string name="host_add">添加主机</string>
+    <string name="host_edit">编辑</string>
+    <string name="host_delete">删除</string>
+    <string name="save">保存</string>
+    <string name="host_dialog_add_title">添加主机</string>
+    <string name="host_dialog_edit_title">编辑主机</string>
+    <string name="host_label_hint">主机名称（如：公司电脑）</string>
+    <string name="host_ip_hint">IP 地址（如 192.168.1.100）</string>
+    <string name="host_ip_invalid">IP 地址格式不正确</string>
+    <string name="host_saved">已保存主机「%1$s」</string>
+    <string name="host_switched">已切换到「%1$s」</string>
+    <string name="host_delete_title">删除主机</string>
+    <string name="host_delete_confirm">确定删除「%1$s」吗？</string>
+    <string name="host_long_press_hint">长按标签可编辑</string>
+
+    <string name="host_unreachable_note">⚠ 未探测到该主机：请确认手机与电脑在同一网络。部分电脑防火墙会拦截探测，显示不可达时不影响实际执行连接命令</string>
+
+    <string name="footer">仅供开发调试使用 · 请勿在不可信网络中开启 · v1.1.0</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <color name="brand">#1E8E5A</color>
+    <color name="on_brand">#FFFFFF</color>
+    <color name="brand_container">#B8F0D4</color>
+    <color name="on_brand_container">#00391E</color>
+    <color name="brand_night">#4ED88F</color>
+    <color name="on_brand_night">#00391E</color>
+    <color name="status_on">#2E9E5B</color>
+    <color name="status_off">#9AA0A6</color>
+    <color name="ic_launcher_background">#101B24</color>
+</resources>
